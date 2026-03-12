@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzureDev Studio | ASP.NET & Cloud Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-dot">●</span>
+                <span class="logo-text">AzureDev</span>
+                <span class="logo-accent">Studio</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#tech" class="nav-link">Технологии</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Microsoft Solutions Partner</div>
+                <h1 class="hero-title">
+                    Разрабатываем <span class="gradient-text">облачные решения</span> на ASP.NET и Azure
+                </h1>
+                <p class="hero-description">
+                    Создаем высоконагруженные корпоративные приложения с использованием .NET 8, Microsoft Azure и SQL Server. 
+                    Полный цикл разработки: от архитектуры до DevOps.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Обсудить проект</a>
+                    <a href="#projects" class="btn btn-outline">Наши работы</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-keyword">public class</span> <span class="code-class">Startup</span>
+{
+    <span class="code-keyword">public void</span> <span class="code-method">ConfigureServices</span>(IServiceCollection services)
+    {
+        services.AddDbContext&lt;AppDbContext&gt;(options <span class="code-operator">=></span>
+            options.UseSqlServer(Configuration.GetConnectionString(<span class="code-string">"AzureDB"</span>)));
+        
+        services.AddControllersWithViews();
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши <span class="gradient-text">услуги</span></h2>
+                <p class="section-subtitle">Полный спектр разработки на технологиях Microsoft</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>ASP.NET Core</h3>
+                    <p>Разработка веб-приложений и API на ASP.NET Core 8 с использованием MVC, Web API и Razor Pages.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Microsoft Azure</h3>
+                    <p>Деплой и управление приложениями в Azure: App Services, Azure SQL, Blob Storage, Azure Functions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🗄️</div>
+                    <h3>SQL Server</h3>
+                    <p>Проектирование и оптимизация баз данных SQL Server, Entity Framework Core, миграции и индексы.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>DevOps</h3>
+                    <p>CI/CD pipelines с Azure DevOps, Docker-контейнеризация, оркестрация Kubernetes (AKS).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Технологический <span class="gradient-text">стек</span></h2>
+                <p class="section-subtitle">Инструменты, которые мы используем каждый день</p>
+            </div>
+            <div class="tech-cloud">
+                <span class="tech-tag">.NET 8</span>
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">Azure</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Entity Framework</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Azure DevOps</span>
+                <span class="tech-tag">IIS</span>
+                <span class="tech-tag">Blazor</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">Redis</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Последние <span class="gradient-text">проекты</span></h2>
+                <p class="section-subtitle">Реальные кейсы наших клиентов</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">CRM</div>
+                    <div class="project-content">
+                        <h3>CRM для ритейла</h3>
+                        <p>ASP.NET Core + Azure SQL Server. Обработка 1 млн транзакций в день.</p>
+                        <div class="project-tech">
+                            <span>.NET 8</span>
+                            <span>Azure</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">ERP</div>
+                    <div class="project-content">
+                        <h3>ERP система</h3>
+                        <p>Модульная ERP на ASP.NET MVC с развертыванием в Azure App Service.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET</span>
+                            <span>Azure</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">API</div>
+                    <div class="project-content">
+                        <h3>Платежный шлюз</h3>
+                        <p>Высоконагруженное API на .NET 8 с кэшированием в Redis и очередями Service Bus.</p>
+                        <div class="project-tech">
+                            <span>Web API</span>
+                            <span>Redis</span>
+                            <span>Service Bus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Свяжитесь <span class="gradient-text">с нами</span></h2>
+                    <p class="contact-text">Готовы обсудить ваш проект? Оставьте заявку, и мы свяжемся с вами в течение 24 часов.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>hello@azuredev.studio</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Москва, ул. Льва Толстого, 16</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="4" placeholder="Опишите ваш проект"></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-dot">●</span>
+                    <span class="logo-text">AzureDev</span>
+                    <span class="logo-accent">Studio</span>
+                </div>
+                <p class="footer-copyright">© 2026 AzureDev Studio. Все права защищены.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
